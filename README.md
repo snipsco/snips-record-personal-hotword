@@ -39,7 +39,7 @@ By default the sensibility is set to `0.5`. You can play with different values o
 
 Once you are happy with your model, move the model directory (containing the 3 waves and the `config.json` file) to `/etc/snips/`.
 
-Then update the `etc/snips.toml` file by adding to the `[snips-hotword]` section:
+Then update the `etc/snips.toml` file by adding your model to the `[snips-hotword]` section:
 
 ```
 base base base
