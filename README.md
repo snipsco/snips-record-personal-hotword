@@ -35,13 +35,24 @@ In order to test you model run the following command:
 where `sensitivity` is an integer between 0 and 1 that allows you to adjust the model sensitivity (the higher the sensitivity the higher the number of false positive).
 By default the sensibility is set to `0.5`. You can play with different values of the sensitivity to find the best value for your model.
 
+Note that you can run several models simultaneously, to do so just declare them one after the other in the command line:
+
+
+```snips-hotword -- --model path_to_your_model_1=sensitivity_1 --model path_to_your_model_2=sensitivity_2```
+
 ## Update your assistant configuration to run your personal model
 
 Once you are happy with your model, move the model directory (containing the 3 waves and the `config.json` file) to `/etc/snips/`.
 
-Then update the `etc/snips.toml` file by adding your model to the `[snips-hotword]` section:
+Then update the `etc/snips.toml` file by adding the following your model to the `[snips-hotword]` section:
 
 ```
-base base base
+# model = "path_to_your_model"
+# hotword_id = "default"
+# sensitivity = sensitivity
 ```
 
+Where `path_to_your_model` is the path to the model and `sensitivity` is your model sensitivity.
+If you want several personal models to run simultaneously you only need to the previous three lines for each model.
+
+Finally, restart your assistant. Your personal hotword is now working.
