@@ -38,7 +38,7 @@ where `sensitivity` is an integer between 0 and 1 that allows you to adjust the 
 Note that you can run several models simultaneously, to do so just declare them one after the other in the command line:
 
 
-```snips-hotword -- --model path_to_your_model_1=sensitivity_1 --model path_to_your_model_2=sensitivity_2```
+```snips-hotword --model path_to_your_model_1=sensitivity_1 --model path_to_your_model_2=sensitivity_2```
 
 ## Update your assistant configuration to run your personal model
 
