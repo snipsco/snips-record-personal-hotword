@@ -33,7 +33,7 @@ In order to test you model run the following command:
 ```snips-hotword -- --model path_to_your_model=sensitivity```
 
 where `sensitivity` is an integer between 0 and 1 that allows you to adjust the model sensitivity (the higher the sensitivity the higher the number of false positive).
-By default the sensibility is set to `0.5`. You can play with different values of the sensitivity to find the best value for your model.
+ and `path_to_your_model` it the path to your model. By default the sensibility is set to `0.5`. You can play with different values of the sensitivity to find the best value for your model.
 
 Note that you can run several models simultaneously, to do so just declare them one after the other in the command line:
 
@@ -47,9 +47,8 @@ Once you are happy with your model, move the model directory (containing the 3 w
 Then update the `etc/snips.toml` file by adding the following your model to the `[snips-hotword]` section:
 
 ```
-# model = "path_to_your_model"
+# model = "path_to_your_model=sensitivity"
 # hotword_id = "default"
-# sensitivity = sensitivity
 ```
 
 Where `path_to_your_model` is the path to the model and `sensitivity` is your model sensitivity.
