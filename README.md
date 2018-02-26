@@ -44,14 +44,12 @@ Note that you can run several models simultaneously, to do so just declare them 
 
 Once you are happy with your model, move the model directory (containing the 3 waves and the `config.json` file) to `/etc/snips/`.
 
-Then update the `etc/snips.toml` file by adding the following your model to the `[snips-hotword]` section:
+Then update the `etc/snips.toml` file by updating the `model` entry your model to the `[snips-hotword]` section:
 
 ```
-# model = "path_to_your_model=sensitivity"
-# hotword_id = "default"
+model = [path_to_your_model_1=sensitivity_1", "path_to_your_model_2=sensitivity_2"]
 ```
 
-Where `path_to_your_model` is the path to the model and `sensitivity` is your model sensitivity.
-If you want several personal models to run simultaneously you only need to the previous three lines for each model.
-
+*Important*: there might me another model poiting to the universal hotword in this file so if you also want the universal hotword to run on your device do not forget to add it in the array.
+Note that if you do not provide `sensivity` the model will take 0.5 by default.
 Finally, restart your assistant. Your personal hotword is now working.
