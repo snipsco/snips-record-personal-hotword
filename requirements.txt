@@ -1,6 +1,4 @@
-cffi==1.11.4
 numpy==1.14.1
 PyAudio==0.2.11
-pycparser==2.18
 sounddevice==0.3.10
 SoundFile==0.9.0.post1

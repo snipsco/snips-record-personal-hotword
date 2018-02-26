@@ -69,7 +69,6 @@ def record_and_trim(hotword_key, nb_records=3):
     os.makedirs(directory)
 
     for i in range(nb_records):
-        # time.sleep(1)
         dest_path = os.path.join(directory, "{0}.wav".format(i))
         record_one(dest_path)
         audio = Audio.from_file(dest_path)
