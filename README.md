@@ -21,10 +21,13 @@ Enter the following command to record your 3 hotword samples.
 
 ```python script_recording your_hotword_name```
 
-**Note**: if you encounter errors becouse your microphone is not availale, this might be because it is currently used y `snips-audio-server`. If yes, stop it efore lauching the previous script y running `sudo systemctl stop snips-audio-server`.
+**Note 1**: if you encounter errors becouse your microphone is not availale, this might be because it is currently used y `snips-audio-server`. If yes, stop it efore lauching the previous script y running `sudo systemctl stop snips-audio-server`.
+
 
 The prompt will then guide you through the different steps. **We insist that the environment must 
 be as quiet as possible to ensure the quality of your model.**
+**Note 2**: you might encounter some warnings (`ALSA...` and/or `jack server...`) at each step, you ignore them.
+
 This script also performs some postprocessing on your samples, in order to remove silence at the beginning and the end of each record. 
 For this postprocessing to perform well, you have to be sure not to make any noise between the 
 "recording..." and the "finished recording" messages in the prompt for each hotword (the duration between those two messages should be 2 seconds, 
