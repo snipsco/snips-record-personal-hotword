@@ -5,7 +5,17 @@ It also contains the instructions to test your model before moving it into your 
 
 ## Clone the repository that contains the script and postprocessing utils
 
-```git clone git@github.com:snipsco/snips-record-personal-hotword.git```
+
+```sudo apt-get install git
+git clone https://github.com/snipsco/snips-record-personal-hotword.git```
+
+
+```sudo apt-get install python-numpy python-pyaudio python-soundfile```
+
+
+```sudo apt install python-pip```
+
+
 
 ## Record the 3 samples
 
@@ -47,7 +57,7 @@ Once you are happy with your model, move the model directory (containing the 3 w
 Then update the `etc/snips.toml` file by updating the `model` entry your model to the `[snips-hotword]` section:
 
 ```
-model = [path_to_your_model_1=sensitivity_1", "path_to_your_model_2=sensitivity_2"]
+model = ["path_to_your_model_1=sensitivity_1", "path_to_your_model_2=sensitivity_2"]
 ```
 
 *Important*: there might me another model poiting to the universal hotword in this file so if you also want the universal hotword to run on your device do not forget to add it in the array.
