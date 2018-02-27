@@ -17,16 +17,14 @@ Install the required python packages. If you have `pip` installed you can use `p
 
 ## Record the 3 samples
 
-First be sure that your device has the required package installed (see the `requirements.txt` file). If not, you can run the following command: 
-
-```pip install -r requirements.txt```
-
-Then, just enter the following command to record your 3 hotword samples:
+Enter the following command to record your 3 hotword samples:
 
 ```python script_recording your_hotword_name```
 
-The prompt will then guide you through the different steps. We insist that the environment must 
-be as quiet as possible to ensure the quality of your model.
+*Note*: if you encounter errors becouse your microphone is not availale, this might be because it is currently used y `snips-audio-server`. If yes, stop it efore lauching the previous script y running `sudo systemctl stop snips-audio-server`.
+
+The prompt will then guide you through the different steps. *We insist that the environment must 
+be as quiet as possible to ensure the quality of your model.*
 This script also performs some postprocessing on your samples, in order to remove silence at the beginning and the end of each record. 
 For this postprocessing to perform well, you have to be sure not to make any noise between the 
 "recording..." and the "finished recording" messages in the prompt for each hotword (the duration between those two messages should be 2 seconds, 
