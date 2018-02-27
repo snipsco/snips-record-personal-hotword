@@ -1,7 +1,7 @@
 # snips-record-personal-hotword
 
 This repo contains the script aimed at recording the 3 samples required a personal hotword model. 
-It also contains the instructions to test your model before moving it into your assistant. To e ale to follow the instructions, you first have to install the snips platform (see the documentation at https://github.com/snipsco/snips-platform-documentation/wiki/1.-Setup-the-Snips-Voice-Platform).
+It also contains the instructions to test your model before moving it into your assistant. To be ale to follow the instructions, you first have to install the snips platform (see the documentation at https://github.com/snipsco/snips-platform-documentation/wiki/1.-Setup-the-Snips-Voice-Platform).
 
 ## 1. Clone the repository that contains the script and postprocessing utils
 
