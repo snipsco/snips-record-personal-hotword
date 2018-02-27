@@ -26,6 +26,7 @@ Enter the following command to record your 3 hotword samples.
 
 The prompt will then guide you through the different steps. **We insist that the environment must 
 be as quiet as possible to ensure the quality of your model.**
+
 **Note 2**: you might encounter some warnings (`ALSA...` and/or `jack server...`) at each step, you ignore them.
 
 This script also performs some postprocessing on your samples, in order to remove silence at the beginning and the end of each record. 
