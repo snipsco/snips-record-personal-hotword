@@ -5,8 +5,7 @@ It also contains the instructions to test your model before moving it into your 
 
 ## Clone the repository that contains the script and postprocessing utils
 
-
-```sudo apt-get install git
+```sudo apt-get install git```
 git clone https://github.com/snipsco/snips-record-personal-hotword.git```
 
 
