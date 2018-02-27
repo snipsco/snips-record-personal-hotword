@@ -28,7 +28,7 @@ FOLDER_BASE = ""
 def record_one(dest_path):
     audio = pyaudio.PyAudio()
 
-    raw_input("""Press enter to record one sample, say your hotword when "recording..." shows up""")
+    raw_input("""\n\nPress enter to record one sample, say your hotword when "recording..." shows up""")
     time.sleep(0.5)
 
     stream = audio.open(format=FORMAT, channels=CHANNELS,
