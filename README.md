@@ -8,6 +8,7 @@ It also contains the instructions to test your model before moving it into your 
 Clone the repo (install git before if needed).
 
 ```sudo apt-get install git```
+
 ```git clone https://github.com/snipsco/snips-record-personal-hotword.git```
 
 Install the required python packages. If you have `pip` installed you can use `pip install -r requirements.txt`. However we recommend to use the following command.
