@@ -22,7 +22,7 @@ Enter the following command to record your 3 hotword samples.
 
 ```python script_recording.py your_hotword_name```
 
-**Note 1**: if you encounter errors becouse your microphone is not availale, this might be because it is currently used y `snips-audio-server`. If yes, stop it efore lauching the previous script y running `sudo systemctl stop snips-audio-server`.
+**Note 1**: if you encounter errors becouse your microphone is not availale, this might be because it is currently used by `snips-audio-server`. If yes, stop it efore lauching the previous script y running `sudo systemctl stop snips-audio-server`.
 
 
 The prompt will then guide you through the different steps. **We insist that the environment must 
