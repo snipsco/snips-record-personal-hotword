@@ -52,9 +52,9 @@ Note that you can run several models simultaneously, to do so just declare them 
 
 ## 4. Update your assistant configuration to run your personal model
 
-Once you are happy with your model, move the model directory (containing the 3 waves and the `config.json` file) to `/etc/snips/`.
+Once you are happy with your model, move the model directory (containing the 3 waves and the `config.json` file) to `/etc/snips/` (create the folder if it is not here with `sudo mkdir /etc/snips/`)
 
-Then update the `etc/snips.toml` file by updating the `model` entry your model to the `[snips-hotword]` section:
+Then update the `/etc/snips.toml` file by updating the `model` entry your model to the `[snips-hotword]` section:
 
 ```
 model = ["path_to_your_model_1=sensitivity_1", "path_to_your_model_2=sensitivity_2"]
