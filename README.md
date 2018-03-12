@@ -52,7 +52,7 @@ Note that you can run several models simultaneously, to do so just declare them 
 
 ## 4. Update your assistant configuration to run your personal model
 
-Once you are happy with your model, move the model directory (containing the 3 waves and the `config.json` file) to `/etc/snips/` (create the folder if it is not here with `sudo mkdir /etc/snips/`)
+Once you are happy with your model, move the model directory (containing the 3 waves and the `config.json` file) to `/etc/snips/` (create the folder if it is not here with `sudo mkdir /etc/snips/` and then use `sudo mv path_to_your_model /etc/snips/` to effectively move the directory to the right place).
 
 Then update the `/etc/snips.toml` file by updating the `model` entry your model to the `[snips-hotword]` section:
 
@@ -60,7 +60,7 @@ Then update the `/etc/snips.toml` file by updating the `model` entry your model 
 model = ["path_to_your_model_1=sensitivity_1", "path_to_your_model_2=sensitivity_2"]
 ```
 
-**Important**:If you want the universal hotword model provided y snips simultaneously, don't forget to add the path to the model in the array above. If you have an assistant, the path to the universal model is ususally `/usr/share/snips/assistant/custom_hotword`.
+**Important**: If you want the universal hotword model provided y snips simultaneously, don't forget to add the path to the model in the array above. If you have an assistant, the path to the universal model is ususally `/usr/share/snips/assistant/custom_hotword`.
 Note that if you do not provide `sensivity` the model will take 0.5 by default.
 
 Finally, restart your assistant's hotword by runing:
