@@ -54,7 +54,7 @@ which lets you time to pronounce your hotword).
 
 Once you are finished, take note of the place your model has been saved in the last prompt message (this will be the `path_to_your_model` in the next step). You are now ready to test and adjust its sensitivity.
 
-## 3. Test your model and adjust its sensitivity
+## 4. Test your model and adjust its sensitivity
 
 In order to test you model run the following command (if you stopped `snips-audio-server` at the previous step, restart it by running `sudo systemctl start snips-audio-server`).
 
@@ -71,7 +71,7 @@ Note that you can run several models simultaneously, to do so just declare them 
 snips-hotword --model <path_to_your_model_1>=<sensitivity_1> --model <path_to_your_model_2>=<sensitivity_2>
 ```
 
-## 4. Update your assistant configuration to run your personal model
+## 5. Update your assistant configuration to run your personal model
 
 Once you are happy with your model, move the model directory (containing the 3 waves and the `config.json` file) to `/etc/snips/`.
 
