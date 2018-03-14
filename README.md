@@ -90,7 +90,7 @@ Then update the `/etc/snips.toml` file by updating the `model` entry your model 
 ```toml
 model = ["<path_to_your_model_1>=<sensitivity_1>", "<path_to_your_model_2>=<sensitivity_2>"]
 ```
-Please note that `path_to_your_model` has been updated since you moved it around - it is now in `/etc/snips/
+Please note that `path_to_your_model` has been updated since you moved it around - it is now in `/etc/snips/` 
 
 **Important**: If you want the universal hotword model attached to your assistant to run simultaneously, add its path to the model entry: `/usr/share/snips/assistant/custom_hotword`
 Note that if you do not provide `sensivity` the model will take 0.5 by default.
