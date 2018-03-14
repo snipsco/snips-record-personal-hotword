@@ -92,7 +92,7 @@ Enter the following command to record your 3 hotword samples.
 
 ```python script_recording.py your_hotword_name```
 
-**Note 1**: if you encounter errors becouse your microphone is not availale, this might be because it is currently used by `snips-audio-server`. If yes, stop it efore lauching the previous script y running `sudo systemctl stop snips-audio-server`.
+**Note 1**: if you encounter errors becouse your microphone is not availale, this might be because it is currently used by `snips-audio-server`. If yes, stop it before lauching the previous script by running `sudo systemctl stop snips-audio-server`.
 
 
 The prompt will then guide you through the different steps. **We insist that the environment must 
@@ -130,7 +130,7 @@ Then update the `/etc/snips.toml` file by updating the `model` entry your model 
 model = ["path_to_your_model_1=sensitivity_1", "path_to_your_model_2=sensitivity_2"]
 ```
 
-**Important**: If you want the universal hotword model provided y snips simultaneously, don't forget to add the path to the model in the array above. If you have an assistant, the path to the universal model is ususally `/usr/share/snips/assistant/custom_hotword`.
+**Important**: If you want the universal hotword model provided by snips simultaneously, don't forget to add the path to the model in the array above. If you have an assistant, the path to the universal model is ususally `/usr/share/snips/assistant/custom_hotword`.
 Note that if you do not provide `sensivity` the model will take 0.5 by default.
 
 Finally, restart your assistant's hotword by runing:
