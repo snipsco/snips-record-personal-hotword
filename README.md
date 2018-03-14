@@ -75,27 +75,27 @@ snips-hotword --model <path_to_your_model_1>=<sensitivity_1> --model <path_to_yo
 
 Once you are happy with your model, move the model directory (containing the 3 waves and the `config.json` file) to `/etc/snips/`.
 
-If you haven't done it yet, create as `snips` folder:
+If you haven't done it yet, create a `snips` folder in `/etc`. Please note that this is a distinct location from `/usr/share/snips/` where your assistant is located.
 ```bash
 sudo mkdir /etc/snips/
 ```
 
-and then move the personal hotword:
+and then move the personal hotword in the right place:
 ```bash
 sudo mv <path_to_your_model> /etc/snips/
 ```
 
-Then update the `/etc/snips.toml` file by updating the `model` entry your model to the `[snips-hotword]` section:
+Then update the `/etc/snips.toml` file by updating the `model` entry your model in the `[snips-hotword]` section:
 
 ```toml
 model = ["<path_to_your_model_1>=<sensitivity_1>", "<path_to_your_model_2>=<sensitivity_2>"]
 ```
 Please note that `path_to_your_model` has been updated since you moved it around - it is now in `/etc/snips/
 
-**Important**: If you want the universal hotword model provided y snips simultaneously, don't forget to add the path to the model in the array above. If you have an assistant, the path to the universal model is usually `/usr/share/snips/assistant/custom_hotword`.
+**Important**: If you want the universal hotword model attached to your assistant to run simultaneously, add its path to the model entry: `/usr/share/snips/assistant/custom_hotword`
 Note that if you do not provide `sensivity` the model will take 0.5 by default.
 
-Finally, restart your assistant's hotword by running:
+Last but not least, restart your assistant's hotword by running:
 
 ```bash
 sudo systemctl start snips-hotword
