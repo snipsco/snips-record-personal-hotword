@@ -1,6 +1,6 @@
 # snips-record-personal-hotword
 
-This repo contains the script aimed at recording the samples required for a personal hotword model. To be able to follow the instructions, you first have to [install the snips platform](https://github.com/snipsco/snips-platform-documentation/wiki/1.-Setup-the-Snips-Voice-Platform) and [add an assistant](https://github.com/snipsco/snips-platform-documentation/wiki/2.-Create-an-assistant-using-an-existing-bundle) to your device .
+This repo contains the script aimed at recording the samples required for a personal hotword model. To be able to follow the instructions, you first have to [install the snips platform](https://snips.gitbook.io/documentation/installing-snips) and [add an assistant](https://snips.gitbook.io/documentation/console/first-steps) to your device .
 
 ## 0. Personal hotword
 The personal hotword allows you to define your own word to wake your assistant and initiate a conversation. To do so, the algorithm needs some samples of you saying this particular word. In this tutorial, a script will guide you through the recording of those samples and in a second part, we will show you how to test your model and incorporate it in your assistant.
