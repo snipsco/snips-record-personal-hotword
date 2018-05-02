@@ -23,14 +23,6 @@ git clone https://github.com/snipsco/snips-record-personal-hotword.git
 cd snips-record-personal-hotword/
 ```
 
-⚠ If you have set up two factor authentication for git, you're likely to face the following issue:
-
-```bash
-remote: Invalid username or password.
-fatal: Authentication failed for 'https://github.com/snipsco/snips-record-personal-hotword.git/'
-```
-You will need to [create a personal access token directly on github](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) and use it in place of your password.
-
 ## 2. Install dependencies
 Use the following command to install the repository dependencies
 
