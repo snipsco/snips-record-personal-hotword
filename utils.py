@@ -69,9 +69,16 @@ def frame(y, frame_length=2048, hop_length=512):
                           strides=(y.itemsize, hop_length * y.itemsize))
     return y_frames
 
+def fix_unicode_string(s):
+    if isinstance(s, unicode):
+        try:
+             return s.encode("ascii")
+        except UnicodeEncodeError:
+             pass
+    return s
 
 def rmse(y, frame_length=2048, hop_length=512):
-    y = np.pad(y, int(frame_length // 2), mode='reflect')
+    y = np.pad(y, int(frame_length // 2), mode=fix_unicode_string('reflect'))
     x = frame(y, frame_length=frame_length, hop_length=hop_length)
     return np.sqrt(np.mean(np.abs(x) ** 2, axis=0, keepdims=True))
 
