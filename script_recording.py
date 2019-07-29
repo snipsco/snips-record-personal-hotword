@@ -124,7 +124,8 @@ def record_and_trim(hotword_key, nb_records=3):
         "use_energy": False,
         "energy_floor": 0.0,
         "raw_energy": True,
-        "preemphasis_coefficient": 0.97
+        "preemphasis_coefficient": 0.97,
+        "model_version": 1
     }
 
     with open(os.path.join(directory, "config.json"), "wb") as f:
