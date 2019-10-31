@@ -1,7 +1,4 @@
-#! /usr/bin/env python
-# encoding: utf-8
-
-from __future__ import unicode_literals
+#! /usr/bin/env python3
 
 import numpy as np
 import soundfile as sf

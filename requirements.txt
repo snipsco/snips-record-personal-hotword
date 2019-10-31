@@ -1,0 +1,2 @@
+pysoundfile
+pyaudio
